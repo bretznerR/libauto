@@ -9,7 +9,7 @@ const SettingsDrawerItem = StackNavigator({
   Settings: {
     screen: Settings,
     navigationOptions: ({ navigation }) => ({
-      title: 'Settings',
+      title: 'FAVORIS',
       headerStyle: {
         borderBottomWidth: 0,
         backgroundColor: '#f5f5f5',

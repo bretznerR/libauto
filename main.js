@@ -32,37 +32,29 @@ const CustomDrawerContentComponent = props => (
 
 const MainRoot = DrawerNavigator(
   {
-    Login: {
-      path: '/login',
-      screen: Login,
-    },
-    Profile: {
-      path: '/profile',
-      screen: Profile,
-    },
-    Lists: {
-      path: '/lists',
+    Contact: {
+      path: '/CONTACT',
       screen: Lists,
     },
-    Components: {
-      path: '/components',
-      screen: Components,
+    FAQ: {
+      path: '/FAQ',
+      screen: Profile,
     },
-    Ratings: {
-      path: '/ratings',
+    Login: {
+      path: '/CONNEXION',
+      screen: Login,
+    },
+    Register: {
+      path: '/INSCRIPTION',
       screen: Ratings,
     },
-    Pricing: {
-      path: '/pricing',
-      screen: Pricing,
-    },
-    Settings: {
-      path: '/settings',
+    Favorites: {
+      path: '/FAVORIS',
       screen: Settings,
     },
   },
   {
-    initialRouteName: 'Components',
+    initialRouteName: 'Contact',
     contentOptions: {
       activeTintColor: '#548ff7',
       activeBackgroundColor: 'transparent',
