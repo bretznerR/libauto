@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dab76ce0-166e-4629-9afa-6783c036b151" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drawer/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawer/Register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drawer/ratings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawer/ratings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Register.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/login/screen2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/login/screen2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/login/screen3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/login/screen3.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -55,8 +49,8 @@
       <file leaf-file-name="screen2.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/views/login/screen2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="319" column="24" selection-start-line="319" selection-start-column="24" selection-end-line="319" selection-end-column="24" />
+            <state relative-caret-position="295">
+              <caret line="374" column="9" selection-start-line="374" selection-start-column="9" selection-end-line="374" selection-end-column="9" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -208,12 +202,12 @@
       <updated>1529584067953</updated>
       <workItem from="1529584069524" duration="299000" />
       <workItem from="1529584389305" duration="1270000" />
-      <workItem from="1529586290800" duration="4837000" />
+      <workItem from="1529586290800" duration="5087000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4850000" />
+    <option name="totallyTimeSpent" value="5100000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -502,8 +496,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/login/screen2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="319" column="24" selection-start-line="319" selection-start-column="24" selection-end-line="319" selection-end-column="24" />
+        <state relative-caret-position="295">
+          <caret line="374" column="9" selection-start-line="374" selection-start-column="9" selection-end-line="374" selection-end-column="9" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>

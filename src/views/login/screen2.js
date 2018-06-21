@@ -226,11 +226,6 @@ export default class LoginScreen3 extends Component {
               title="S'INSCRIRE"
               containerStyle={{ flex: -1 }}
               buttonStyle={styles.signUpButton}
-              linearGradientProps={{
-                colors: ['#FF9800', '#F44336'],
-                start: [1, 0],
-                end: [0.2, 0],
-              }}
               titleStyle={styles.signUpButtonText}
               onPress={this.signup}
               disabled={isLoading}
@@ -377,6 +372,7 @@ const styles = StyleSheet.create({
     fontSize: 13,
   },
   signUpButton: {
+    color: '#08a0c9',
     width: 250,
     borderRadius: 50,
     height: 45,
