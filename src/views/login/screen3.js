@@ -156,7 +156,7 @@ export default class LoginScreen2 extends Component {
                     onPress={() => this.selectCategory(0)}
                     containerStyle={{flex: 1}}
                     titleStyle={[styles.categoryText, isLoginPage && styles.selectedCategoryText]}
-                    title={'Login'}
+                    title={'Register'}
                   />
                   <Button
                     disabled={isLoading}

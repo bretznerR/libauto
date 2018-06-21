@@ -3,10 +3,10 @@ import React from 'react';
 import { StackNavigator } from 'react-navigation';
 import { Icon } from 'react-native-elements';
 
-import Login from '../views/login';
+import Register from '../views/Register';
 
 const LoginDrawerItem = StackNavigator({
-  Playground: { screen: Login }
+  Playground: { screen: Register }
   },
   {
     headerMode: 'none'
@@ -14,7 +14,7 @@ const LoginDrawerItem = StackNavigator({
 );
 
 LoginDrawerItem.navigationOptions = {
-  drawerLabel: 'CONNEXION',
+  drawerLabel: 'INSCRIPTION',
   drawerIcon: ({ tintColor }) => (
     <Icon
       name="email"

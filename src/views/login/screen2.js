@@ -21,10 +21,6 @@ import Icon from 'react-native-vector-icons/SimpleLineIcons'
 UIManager.setLayoutAnimationEnabledExperimental &&
   UIManager.setLayoutAnimationEnabledExperimental(true)
 
-const USER_COOL = require('../../../assets/images/user-cool.png')
-const USER_STUDENT = require('../../../assets/images/user-student.png')
-const USER_HP = require('../../../assets/images/user-hp.png')
-
 const SCREEN_WIDTH = Dimensions.get('window').width
 const SCREEN_HEIGHT = Dimensions.get('window').height
 
@@ -152,44 +148,34 @@ export default class LoginScreen3 extends Component {
             behavior="position"
             contentContainerStyle={styles.formContainer}
           >
-            <Text style={styles.signUpText}>Sign up</Text>
-            <Text style={styles.whoAreYouText}>WHO YOU ARE ?</Text>
-            <View style={styles.userTypesContainer}>
-              <UserTypeItem
-                label="COOL"
-                labelColor="#ECC841"
-                image={USER_COOL}
-                onPress={() => this.setSelectedType('parent')}
-                selected={selectedType === 'parent'}
-              />
-              <UserTypeItem
-                label="STUDENT"
-                labelColor="#2CA75E"
-                image={USER_STUDENT}
-                onPress={() => this.setSelectedType('child')}
-                selected={selectedType === 'child'}
-              />
-              <UserTypeItem
-                label="HARRY POTTER"
-                labelColor="#36717F"
-                image={USER_HP}
-                onPress={() => this.setSelectedType('teacher')}
-                selected={selectedType === 'teacher'}
-              />
-            </View>
-            <View style={{width: '80%', alignItems: 'center'}}>
+            <Text style={styles.signUpText}>S'INSCRIRE</Text>
+            <Text style={styles.whoAreYouText}></Text>
+            <View style={{width: '100%', alignItems: 'center'}}>
               <FormInput
                 refInput={input => (this.usernameInput = input)}
                 icon="user"
                 value={username}
                 onChangeText={username => this.setState({ username })}
-                placeholder="Username"
+                placeholder="Prénom"
                 returnKeyType="next"
-                errorMessage={usernameValid ? null : 'Your username can\'t be blank'}
+                errorMessage={usernameValid ? null : 'Ce champ ne peut être vide'}
                 onSubmitEditing={() => {
                   this.validateUsername()
                   this.emailInput.focus()
                 }}
+              />
+              <FormInput
+                  refInput={input => (this.usernameInput = input)}
+                  icon="user"
+                  value={username}
+                  onChangeText={username => this.setState({ username })}
+                  placeholder="Nom"
+                  returnKeyType="next"
+                  errorMessage={usernameValid ? null : 'Ce champ ne peut être vide'}
+                  onSubmitEditing={() => {
+                      this.validateUsername()
+                      this.emailInput.focus()
+                  }}
               />
               <FormInput
                 refInput={input => (this.emailInput = input)}
@@ -197,9 +183,9 @@ export default class LoginScreen3 extends Component {
                 value={email}
                 onChangeText={email => this.setState({ email })}
                 placeholder="Email"
-                keyboardType="email-address"
+                keyboardType="Adresse mail"
                 returnKeyType="next"
-                errorMessage={emailValid ? null : 'Please enter a valid email address'}
+                errorMessage={emailValid ? null : 'Merci de saisir une adresse mail valide'}
                 onSubmitEditing={() => {
                   this.validateEmail()
                   this.passwordInput.focus()
@@ -210,10 +196,10 @@ export default class LoginScreen3 extends Component {
                 icon="lock"
                 value={password}
                 onChangeText={password => this.setState({ password })}
-                placeholder="Password"
+                placeholder="Mot de passe"
                 secureTextEntry
                 returnKeyType="next"
-                errorMessage={passwordValid ? null : 'Please enter at least 8 characters'}
+                errorMessage={passwordValid ? null : 'Mot de passe d\'au moins 8 caractères'}
                 onSubmitEditing={() => {
                   this.validatePassword()
                   this.confirmationPasswordInput.focus()
@@ -225,9 +211,9 @@ export default class LoginScreen3 extends Component {
                 value={confirmationPassword}
                 onChangeText={confirmationPassword =>
                   this.setState({ confirmationPassword })}
-                placeholder="Confirm Password"
+                placeholder="Vérification du mot de passe"
                 secureTextEntry
-                errorMessage={confirmationPasswordValid ? null : 'The password fields are not identics'}
+                errorMessage={confirmationPasswordValid ? null : 'Les deux mots de passe ne sont pas identiques'}
                 returnKeyType="go"
                 onSubmitEditing={() => {
                   this.validateConfirmationPassword()
@@ -237,7 +223,7 @@ export default class LoginScreen3 extends Component {
             </View>
             <Button
               loading={isLoading}
-              title="SIGNUP"
+              title="S'INSCRIRE"
               containerStyle={{ flex: -1 }}
               buttonStyle={styles.signUpButton}
               linearGradientProps={{
@@ -317,7 +303,7 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingBottom: 20,
     paddingTop: 20,
-    backgroundColor: '#293046',
+    backgroundColor: '#FFFFFF',
     width: SCREEN_WIDTH,
     height: SCREEN_HEIGHT,
     alignItems: 'center',
@@ -329,9 +315,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   signUpText: {
-    color: 'white',
+    color: '#39a937',
     fontSize: 28,
-    fontFamily: 'light',
+    fontWeight: "bold",
   },
   whoAreYouText: {
     color: '#7384B4',
@@ -395,17 +381,9 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     height: 45,
   },
-  loginHereContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  alreadyAccountText: {
-    fontFamily: 'lightitalic',
-    fontSize: 12,
-    color: 'white',
-  },
+
   loginHereText: {
-    color: '#FF9800',
+    color: '#08a0c9',
     fontFamily: 'lightitalic',
     fontSize: 12,
   },

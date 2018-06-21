@@ -7,7 +7,7 @@ import { DrawerNavigator, DrawerItems } from 'react-navigation';
 import Components from './src/drawer/components';
 import Ratings from './src/drawer/ratings';
 import Pricing from './src/drawer/pricing';
-import Login from './src/drawer/login';
+import Register from './src/drawer/Register';
 import Profile from './src/drawer/profile';
 import Lists from './src/drawer/lists';
 import Settings from './src/drawer/settings';
@@ -40,12 +40,12 @@ const MainRoot = DrawerNavigator(
       path: '/FAQ',
       screen: Profile,
     },
-    Login: {
-      path: '/CONNEXION',
-      screen: Login,
-    },
     Register: {
       path: '/INSCRIPTION',
+      screen: Register,
+    },
+    Login: {
+      path: '/CONNEXION',
       screen: Ratings,
     },
     Favorites: {
