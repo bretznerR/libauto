@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="dab76ce0-166e-4629-9afa-6783c036b151" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drawer/lists.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawer/lists.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drawer/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawer/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drawer/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawer/profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drawer/ratings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawer/ratings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drawer/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawer/settings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/drawer/settings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/settings.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,8 +30,8 @@
       <file leaf-file-name="settings.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/drawer/settings.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+            <state relative-caret-position="182">
+              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -146,6 +141,7 @@
         <option value="$PROJECT_DIR$/src/drawer/profile.js" />
         <option value="$PROJECT_DIR$/src/drawer/ratings.js" />
         <option value="$PROJECT_DIR$/main.js" />
+        <option value="$PROJECT_DIR$/src/drawer/favoris.js" />
         <option value="$PROJECT_DIR$/src/drawer/settings.js" />
       </list>
     </option>
@@ -216,20 +212,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="libauto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="libauto" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="lists" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="libauto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="libauto" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -264,12 +246,12 @@
       <updated>1529584067953</updated>
       <workItem from="1529584069524" duration="299000" />
       <workItem from="1529584389305" duration="1270000" />
-      <workItem from="1529586290800" duration="2354000" />
+      <workItem from="1529586290800" duration="3167000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2367000" />
+    <option name="totallyTimeSpent" value="3180000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -514,8 +496,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/drawer/settings.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        <state relative-caret-position="182">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>

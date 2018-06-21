@@ -12,7 +12,7 @@ const SettingsDrawerItem = StackNavigator({
       title: 'FAVORIS',
       headerStyle: {
         borderBottomWidth: 0,
-        backgroundColor: '#f5f5f5',
+        backgroundColor: '#FFFFFF',
       },
       headerLeft: (
         <Icon
@@ -28,19 +28,7 @@ const SettingsDrawerItem = StackNavigator({
 });
 
 SettingsDrawerItem.navigationOptions = {
-  drawerLabel: 'Settings',
-  drawerIcon: ({ tintColor }) => (
-    <Icon
-      name="cog"
-      size={30}
-      iconStyle={{
-        width: 30,
-        height: 30,
-      }}
-      type="entypo"
-      color={tintColor}
-    />
-  ),
+  drawerLabel: 'FAVORIS',
 };
 
 export default SettingsDrawerItem;
