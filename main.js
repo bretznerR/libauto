@@ -16,7 +16,7 @@ const SCREEN_WIDTH = Dimensions.get('window').width;
 
 const CustomDrawerContentComponent = props => (
   <View style={{ flex: 1, backgroundColor: '#43484d' }}>
-    <View style={{ marginTop: 40, justifyContent: 'center', alignItems: 'center' }}>
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
       <Image
         source={require('./src/images/logo.png')}
         style={{ width: SCREEN_WIDTH * 0.57 }}
