@@ -5,7 +5,7 @@ import { View, Image, Dimensions } from 'react-native';
 import { DrawerNavigator, DrawerItems } from 'react-navigation';
 
 import Home from './src/drawer/home';
-import Ratings from './src/drawer/ratings';
+import Login from './src/drawer/login';
 import Register from './src/drawer/Register';
 import Profile from './src/drawer/profile';
 import Lists from './src/drawer/lists';
@@ -49,7 +49,7 @@ const MainRoot = DrawerNavigator(
         },
         Login: {
             path: '/CONNEXION',
-            screen: Ratings,
+            screen: Login,
         },
         Favorites: {
             path: '/FAVORIS',

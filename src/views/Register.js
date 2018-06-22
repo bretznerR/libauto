@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { StyleSheet, View, ScrollView } from 'react-native';
 
 // TODO
-import LoginScreen2 from './login/screen2';
+import LoginScreen2 from './register/screen2';
 
 export default class Register extends Component {
   render() {
