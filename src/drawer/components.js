@@ -27,9 +27,9 @@ const Components = TabNavigator(
     },
     ListsTab: {
       screen: ListsTab,
-      path: '/lists',
+      path: '/contact',
       navigationOptions: {
-        tabBarLabel: 'Lists',
+        tabBarLabel: 'Contact',
         tabBarIcon: ({ tintColor, focused }) => (
           <Icon name="list" size={30} type="entypo" color={tintColor} />
         ),

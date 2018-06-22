@@ -21,7 +21,7 @@ const ListsTab = StackNavigator({
     screen: ListsTabView,
     path: '/',
     navigationOptions: ({ navigation }) => ({
-      title: 'Lists',
+      title: 'Contact',
       headerLeft: (
         <Icon
           name="menu"
@@ -37,7 +37,7 @@ const ListsTab = StackNavigator({
     screen: ListsDetailTabView,
     path: 'lists_detail',
     navigationOptions: {
-      title: 'Lists Detail',
+      title: 'Contact Detail',
     },
   },
 });

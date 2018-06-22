@@ -8,7 +8,7 @@ import Home from './src/drawer/home';
 import Login from './src/drawer/login';
 import Register from './src/drawer/Register';
 import Profile from './src/drawer/profile';
-import Lists from './src/drawer/lists';
+import Contact from './src/drawer/contact';
 import Settings from './src/drawer/settings';
 
 const SCREEN_WIDTH = Dimensions.get('window').width;
@@ -37,7 +37,7 @@ const MainRoot = DrawerNavigator(
         },
         Contact: {
             path: '/CONTACT',
-            screen: Lists,
+            screen: Contact,
         },
         FAQ: {
             path: '/FAQ',

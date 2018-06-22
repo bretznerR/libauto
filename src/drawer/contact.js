@@ -3,10 +3,10 @@ import React from 'react';
 import { StackNavigator } from 'react-navigation';
 import { Icon } from 'react-native-elements';
 
-import Lists from '../views/lists';
+import Contact from '../views/contact';
 
 const ListsDrawerItem = StackNavigator({
-  Playground: { screen: Lists }
+  Playground: { screen: Contact }
 },
   {
     headerMode: 'none'
