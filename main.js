@@ -110,14 +110,13 @@ export default class AppContainer extends React.Component {
   }
 
   render() {
-    if (!this.state.isReady) {
-      return (
-        <AppLoading
-          startAsync={this._loadAssetsAsync}
-          onFinish={() => this.setState({ isReady: true })}
-          // onError={console.warn}
-        />
-      );
+    if(this.state.isLoading){
+        return(
+            <FadeInView style={{backgroundColor: 'black',width:screenWidth,flexDirection:'row', alignItems: 'center',justifyContent: 'center'}}>
+                <Image style={{width: 80, height: 80,}} source={require('../../assets/icons/loading.gif')} />
+            </FadeInView>
+        );
+
     }
 
     return (
