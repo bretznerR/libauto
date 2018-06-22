@@ -17,7 +17,7 @@ LoginDrawerItem.navigationOptions = {
   drawerLabel: 'INSCRIPTION',
   drawerIcon: ({ tintColor }) => (
     <Icon
-      name="email"
+      name="person"
       size={30}
       iconStyle={{
         width: 30,

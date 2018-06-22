@@ -16,7 +16,7 @@ ProfileDrawerItem.navigationOptions = {
   drawerLabel: 'FAQ',
   drawerIcon: ({ tintColor }) => (
     <Icon
-      name="person"
+      name="question-answer"
       size={30}
       iconStyle={{
         width: 30,
