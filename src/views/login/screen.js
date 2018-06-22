@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import  { StackNavigator } from 'react-navigation'
 import {
     Alert,
     LayoutAnimation,
@@ -14,6 +15,7 @@ import {
 } from 'react-native'
 import { Font } from 'expo'
 import { Input, Button } from 'react-native-elements'
+import Register from '../../drawer/Register' 
 
 import Icon from 'react-native-vector-icons/SimpleLineIcons'
 
@@ -23,6 +25,11 @@ UIManager.setLayoutAnimationEnabledExperimental(true)
 
 const SCREEN_WIDTH = Dimensions.get('window').width
 const SCREEN_HEIGHT = Dimensions.get('window').height
+
+const App = StackNavigator({
+    Login: { screen: LoginScreen },
+    Register: { screen: Register },
+  });
 
 export default class LoginScreen extends Component {
     constructor(props) {
@@ -126,6 +133,7 @@ export default class LoginScreen extends Component {
         const {
             isLoading,
             selectedType,
+            navigate  = this.props.navigation,
             fontLoaded,
             confirmationPassword,
             email,
@@ -151,32 +159,7 @@ export default class LoginScreen extends Component {
                     <Text style={styles.signUpText}>SE CONNECTER</Text>
                     <Text style={styles.whoAreYouText}></Text>
                     <View style={{width: '100%', alignItems: 'center'}}>
-                        <FormInput
-                            refInput={input => (this.usernameInput = input)}
-                            icon="user"
-                            value={username}
-                            onChangeText={username => this.setState({ username })}
-                            placeholder="Prénom"
-                            returnKeyType="next"
-                            errorMessage={usernameValid ? null : 'Ce champ ne peut être vide'}
-                            onSubmitEditing={() => {
-                                this.validateUsername()
-                                this.emailInput.focus()
-                            }}
-                        />
-                        <FormInput
-                            refInput={input => (this.usernameInput = input)}
-                            icon="user"
-                            value={username}
-                            onChangeText={username => this.setState({ username })}
-                            placeholder="Nom"
-                            returnKeyType="next"
-                            errorMessage={usernameValid ? null : 'Ce champ ne peut être vide'}
-                            onSubmitEditing={() => {
-                                this.validateUsername()
-                                this.emailInput.focus()
-                            }}
-                        />
+                       
                         <FormInput
                             refInput={input => (this.emailInput = input)}
                             icon="envelope"
@@ -205,25 +188,11 @@ export default class LoginScreen extends Component {
                                 this.confirmationPasswordInput.focus()
                             }}
                         />
-                        <FormInput
-                            refInput={input => (this.confirmationPasswordInput = input)}
-                            icon="lock"
-                            value={confirmationPassword}
-                            onChangeText={confirmationPassword =>
-                                this.setState({ confirmationPassword })}
-                            placeholder="Vérification du mot de passe"
-                            secureTextEntry
-                            errorMessage={confirmationPasswordValid ? null : 'Les deux mots de passe ne sont pas identiques'}
-                            returnKeyType="go"
-                            onSubmitEditing={() => {
-                                this.validateConfirmationPassword()
-                                this.signup()
-                            }}
-                        />
+                       
                     </View>
                     <Button
                         loading={isLoading}
-                        title="S'INSCRIRE"
+                        title="SE CONNECTER"
                         containerStyle={{ flex: -1 }}
                         buttonStyle={styles.signUpButton}
                         titleStyle={styles.signUpButtonText}
@@ -233,15 +202,17 @@ export default class LoginScreen extends Component {
                 </KeyboardAvoidingView>
                 <View style={styles.loginHereContainer}>
                     <Text style={styles.alreadyAccountText}>
-                        Already have an account.
+                        Not register.
                     </Text>
                     <Button
-                        title="Login here"
+                        title="Register here"
                         titleStyle={styles.loginHereText}
                         containerStyle={{ flex: -1 }}
                         buttonStyle={{ backgroundColor: 'transparent' }}
                         underlayColor="transparent"
-                        onPress={() => Alert.alert('🔥', 'You can login here')}
+                        onPress={() =>
+                            navigate('Register')
+                        }
                     />
                 </View>
             </ScrollView>
