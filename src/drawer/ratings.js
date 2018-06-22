@@ -15,7 +15,7 @@ RatingsDrawerItem.navigationOptions = {
   drawerLabel: 'CONNEXION',
   drawerIcon: ({ tintColor }) => (
     <Icon
-      name="star"
+      name="person"
       size={30}
       iconStyle={{
         width: 30,

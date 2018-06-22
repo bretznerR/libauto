@@ -29,6 +29,19 @@ const SettingsDrawerItem = StackNavigator({
 
 SettingsDrawerItem.navigationOptions = {
   drawerLabel: 'FAVORIS',
+  drawerIcon: ({ tintColor }) => (
+    <Icon
+      name="star"
+      size={30}
+      iconStyle={{
+        width: 30,
+        height: 30
+      }}
+      type="material"
+      color={tintColor}
+    />
+  ),
 };
+
 
 export default SettingsDrawerItem;

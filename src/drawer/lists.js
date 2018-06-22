@@ -17,7 +17,7 @@ ListsDrawerItem.navigationOptions = {
   drawerLabel: 'CONTACT',
   drawerIcon: ({ tintColor }) => (
     <Icon
-      name="list"
+      name="contact-mail"
       size={30}
       iconStyle={{
         width: 30,
