@@ -10,6 +10,7 @@ import Register from './src/drawer/Register';
 import Profile from './src/drawer/profile';
 import Contact from './src/drawer/contact';
 import Settings from './src/drawer/settings';
+import Components from './src/drawer/components';
 
 const SCREEN_WIDTH = Dimensions.get('window').width;
 
@@ -54,6 +55,10 @@ const MainRoot = DrawerNavigator(
         Favorites: {
             path: '/FAVORIS',
             screen: Settings,
+        },
+        Components: {
+            path: '/Components',
+            screen: Components,
         },
     },
     {

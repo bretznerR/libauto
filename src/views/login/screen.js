@@ -27,7 +27,7 @@ const SCREEN_WIDTH = Dimensions.get('window').width
 const SCREEN_HEIGHT = Dimensions.get('window').height
 
 const App = StackNavigator({
-    Login: { screen: LoginScreen },
+   // Login: { screen: LoginScreen },
     Register: { screen: Register },
   });
 
@@ -166,7 +166,8 @@ export default class LoginScreen extends Component {
                             value={email}
                             onChangeText={email => this.setState({ email })}
                             placeholder="Email"
-                            keyboardType="Adresse mail"
+                            keyboardType={'default'}
+                            
                             returnKeyType="next"
                             errorMessage={emailValid ? null : 'Merci de saisir une adresse mail valide'}
                             onSubmitEditing={() => {
@@ -329,7 +330,7 @@ const styles = StyleSheet.create({
     inputStyle: {
         flex: 1,
         marginLeft: 10,
-        color: 'white',
+        color: 'black',
         fontFamily: 'light',
         fontSize: 16,
     },
@@ -343,7 +344,6 @@ const styles = StyleSheet.create({
         fontSize: 13,
     },
     signUpButton: {
-        color: '#08a0c9',
         width: 250,
         borderRadius: 50,
         height: 45,

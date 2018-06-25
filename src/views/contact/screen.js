@@ -10,6 +10,7 @@ import {
     StyleSheet,
     ScrollView,
     Text,
+    TextInput,
     View,
     Picker
 } from 'react-native'
@@ -136,6 +137,9 @@ export default class Contact extends Component {
             confirmationPasswordValid,
             username,
             usernameValid,
+            name,
+            phone,
+            message
         } = this.state
 
         return !fontLoaded
@@ -149,6 +153,12 @@ export default class Contact extends Component {
                     behavior="position"
                     contentContainerStyle={styles.formContainer}
                 >
+
+            
+                    <Text style={styles.signUpText}>CONTACT</Text>
+                    <Text style={styles.whoAreYouText}></Text>
+                   
+                
                     <View style={{width: '100%', alignItems: 'center'}}>
                         <FormInput
                             refInput={input => (this.usernameInput = input)}
@@ -156,6 +166,7 @@ export default class Contact extends Component {
                             value={username}
                             onChangeText={username => this.setState({ username })}
                             placeholder="Prénom"
+                            onChangeText={(text) => this.setState({text})}
                             returnKeyType="next"
                             errorMessage={usernameValid ? null : 'Ce champ ne peut être vide'}
                             onSubmitEditing={() => {
@@ -166,8 +177,8 @@ export default class Contact extends Component {
                         <FormInput
                             refInput={input => (this.nameInput = input)}
                             icon="user"
-                            value={username}
-                            onChangeText={username => this.setState({ username })}
+                            value={name}
+                            onChangeText={name => this.setState({ name })}
                             placeholder="Nom"
                             returnKeyType="next"
                             errorMessage={usernameValid ? null : 'Ce champ ne peut être vide'}
@@ -180,9 +191,10 @@ export default class Contact extends Component {
                             refInput={input => (this.emailInput = input)}
                             icon="envelope"
                             value={email}
+                            keyboardType={phone ? 'phone-pad' : 'default'}
                             onChangeText={email => this.setState({ email })}
                             placeholder="Email"
-                            keyboardType="Adresse mail"
+                            
                             returnKeyType="next"
                             errorMessage={emailValid ? null : 'Merci de saisir une adresse mail valide'}
                             onSubmitEditing={() => {
@@ -190,17 +202,44 @@ export default class Contact extends Component {
                                 this.passwordInput.focus()
                             }}
                         />
-                        <Picker
+                         <FormInput
+                            refInput={input => (this.phoneInput = input)}
+                            icon="screen-smartphone"
+                            value={phone}
+                            onChangeText={phone => this.setState({ phone })}
+                            placeholder="Téléphone"
+                            returnKeyType="next"
+                            errorMessage={usernameValid ? null : 'Ce champ ne peut être vide'}
+                            onSubmitEditing={() => {
+                                this.validateUsername()
+                                this.emailInput.focus()
+                            }}
+                        />
+                           <FormInput
+                            refInput={input => (this.messageInput = input)}
+                            multiline={true}
+                            numberOfLines={23}
+                            value={message}
+                            onChangeText={message => this.setState({ message })}
+                            placeholder="Message"
+                            returnKeyType="next"
+                            errorMessage={usernameValid ? null : 'Ce champ ne peut être vide'}
+                            onSubmitEditing={() => {
+                                this.validateUsername()
+                                this.emailInput.focus()
+                            }}
+                        />
+                        {/* <Picker
                             selectedValue={this.state.language}
                             style={{ borderColor: "black", borderWidth: 1, height: 50, width: 100 }}
                             onValueChange={(itemValue, itemIndex) => this.setState({language: itemValue})}>
                             <Picker.Item label="Java" value="java" />
                             <Picker.Item label="JavaScript" value="js" />
-                        </Picker>
+                        </Picker> */}
                     </View>
                     <Button
                         loading={isLoading}
-                        title="S'INSCRIRE"
+                        title="Envoyer"
                         containerStyle={{ flex: -1 }}
                         buttonStyle={styles.signUpButton}
                         titleStyle={styles.signUpButtonText}
@@ -222,6 +261,7 @@ export default class Contact extends Component {
                     />
                 </View>
             </ScrollView>
+            
     }
 }
 
@@ -335,7 +375,7 @@ const styles = StyleSheet.create({
     inputStyle: {
         flex: 1,
         marginLeft: 10,
-        color: 'white',
+        color: 'black',
         fontFamily: 'light',
         fontSize: 16,
     },
@@ -349,7 +389,7 @@ const styles = StyleSheet.create({
         fontSize: 13,
     },
     signUpButton: {
-        color: '#08a0c9',
+        
         width: 250,
         borderRadius: 50,
         height: 45,

@@ -81,13 +81,14 @@ export default class LoginScreen1 extends Component {
                 containerStyle={{marginVertical: 10}}
                 onChangeText={email => this.setState({email})}
                 value={email}
-                inputStyle={{marginLeft: 10, color: 'white'}}
+                inputStyle={{marginLeft: 10, color: 'black'}}
                 keyboardAppearance="light"
                 placeholder="Email"
                 autoFocus={false}
                 autoCapitalize="none"
                 autoCorrect={false}
-                keyboardType="email-address"
+                keyboardType={'default'}
+                
                 returnKeyType="next"
                 ref={ input => this.emailInput = input }
                 onSubmitEditing={() => {
@@ -110,7 +111,7 @@ export default class LoginScreen1 extends Component {
                 containerStyle={{marginVertical: 10}}
                 onChangeText={(password) => this.setState({password})}
                 value={password}
-                inputStyle={{marginLeft: 10, color: 'white'}}
+                inputStyle={{marginLeft: 10, color: 'black'}}
                 secureTextEntry={true}
                 keyboardAppearance="light"
                 placeholder="Password"
